@@ -1,0 +1,530 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+
+html {
+    font-size: 6px;
+}
+
+::selection {
+    background-color: hotpink;
+    color: yellow;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #fff;
+    user-select: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bold;
+    font-family: font-family: 'Amaranth', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    /* width: 1140px; */
+    width: 100%;
+    margin: 0rem auto;
+    padding: 0rem .5rem;
+
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.clearfix {
+    clear: both;
+    display: block;
+    content: '';
+}
+
+.col {
+    width: 100%;
+    padding: 1.2rem;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn {
+    display: inline-block;
+    padding: 2.8rem 3.2rem;
+    background-color: transparent;
+    border: 2px solid rgba(225, 225, 225, .8);
+    border-top-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    color: #fff;
+    font-size: 2rem;
+    margin-top: 2rem;
+    transition: background-color .3s ease-in-out,
+        color .3s ease-in-out;
+    outline: none;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width:576px) {
+    .container {
+        max-width: 560px;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    html {
+        font-size: 6px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .container {
+        max-width: 755px;
+    }
+
+    .col {
+        width: 50%;
+    }
+
+    html {
+        font-size: 7px;
+    }
+
+}
+
+@media screen and (min-width:992px) {
+    .container {
+        max-width: 980px;
+    }
+
+    .col {
+        width: 50%;
+    }
+
+    html {
+        font-size: 9px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    .col {
+        width: 33.3333%;
+    }
+
+    html {
+        font-size: 10px;
+    }
+}
+
+/* Navigation region */
+
+nav {
+    background-color: #2c3e50;
+    padding: 2.9rem 0rem;
+    color: #fff;
+    position: sticky;
+    user-select: none;
+    z-index: 999;
+}
+
+.logo-box {
+    float: left;
+}
+
+.logo-box .logo {
+    color: #fff;
+    font-size: 3.2rem;
+    font-weight: bold;
+    font-family: 'Amaranth', sans-serif;
+}
+
+
+.nav-links {
+    float: right;
+}
+
+.nav-links li {
+    float: left;
+    margin: .4rem;
+}
+
+.nav-links .nav-link {
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 1.6rem;
+    font-weight: bold;
+    display: block;
+    letter-spacing: .1rem;
+}
+
+.nav-links .nav-link:hover {
+    color: #18bc9c;
+    transition: color .3s ease-in-out;
+}
+
+
+.nav-icon {
+    display: none;
+}
+
+@media (max-width:992px) {
+    
+    .nav-links .nav-link {
+        font-size: 2.6rem;
+        text-align: left;
+    }
+    .nav-links {
+        float: none;
+    }
+    .nav-links li {
+    float: none;
+    }
+    
+    .logo-box {
+    float: none;
+}
+    
+    .nav-icon{
+        display:inline-block;
+        position: absolute;
+        top: -0.8rem;
+        right:2rem;
+        
+    }
+    .nav-icon i{
+        font-size: 3rem;
+        box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.6);
+        padding: 2rem 3rem;
+        border-radius: 10px
+    }
+    #deneme.responsive li:not(:first-child){
+        display: none;
+    }
+   
+
+}
+
+
+/* Header Region */
+
+
+header {
+    padding-top: 10rem;
+    background-color: #18bc9c;
+    /* 
+    
+    height: 90vh; 
+    Sabit yükseklik ortaalığı karoştırır 
+    
+    */
+    padding-bottom: 10rem;
+    text-align: center;
+    user-select: none;
+}
+
+
+header h1 {
+    font-size: 4.6rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.star-light {
+    border: none;
+    width: 30rem;
+    border-top: .4rem solid #fff;
+    margin: 2rem auto;
+    overflow: visible;
+}
+
+.star-light::after {
+    content: '\f005';
+    font-family: "Font Awesome 5 free";
+    color: #fff;
+    font-weight: 900;
+    font-size: 3rem;
+    position: relative;
+    top: -2.5rem;
+    background-color: #18bc9c;
+    padding: 0rem 1.2rem;
+}
+
+.header-h2 {
+    color: #fff;
+    font-size: 3rem;
+    font-family: 'Amaranth', sans-serif;
+    font-weight: 400;
+}
+
+
+/* PortFolio Region */
+
+
+#Portfolio {
+    text-align: center;
+    padding: 10rem 5rem;
+}
+
+#Portfolio .container h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-transform: uppercase;
+    font-size: 4.8rem;
+
+}
+
+.star-dark {
+    overflow: visible;
+    width: 30rem;
+    margin: 0rem auto;
+    border: none;
+    border-top: .5rem solid #2c3e50;
+}
+
+.star-dark::after {
+    content: '\f005';
+    font-family: 'Font Awesome 5 free';
+    font-weight: 700;
+    color: #2c3e50;
+    padding: 1.2rem 1.2rem;
+    position: relative;
+    top: -3rem;
+    font-size: 3.2rem;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5),
+        0px 0px 10px 0px rgba(225, 225, 225, .5);
+}
+
+/* İmages Region */
+
+
+.col img {
+    width: 100%;
+    display: block;
+}
+
+.portfolio-items {
+    position: relative;
+
+}
+
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 1.2rem;
+    top: 0px;
+    left: 0;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+.icon {
+    width: 100%;
+    height: 100%;
+    background-color: #18bc9c;
+}
+
+.icon i {
+    color: #fff;
+    font-size: 10rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-5rem, -5rem);
+}
+
+.col:hover .overlay {
+    opacity: .7;
+}
+
+
+/* About Region */
+
+
+@media screen and (min-width:992px) {
+    .container p  {
+        padding: 1rem;
+        width: 50%;
+        color: #fff;
+        font-family: 'Lato', sans-serif;
+        float: left;
+        font-size: 2rem;
+        text-align: left;
+    }
+}
+
+#About {
+    padding: 5.5rem;
+    text-align: center;
+    background: #18bc9c;
+}
+
+.About-h1 {
+    font-size: 5rem;
+    color: #fff;
+    letter-spacing: .2rem;
+}
+
+.container p {
+    padding: 1rem;
+    width: 100%;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    float: left;
+    font-size: 2rem;
+    text-align: left;
+}
+
+.btn:hover {
+    background-color: rgba(225, 225, 225, .8);
+    color: #333;
+}
+
+/* Contact Region */
+
+
+.Contact {
+    padding: 5rem 0rem;
+    text-align: center;
+}
+
+.contact-h2 {
+    color: #333;
+    font-size: 6.0rem;
+    padding-bottom: 50px;
+}
+
+#Contact {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.form-group {
+    text-align: left;
+    border-bottom: 1px solid #333;
+    /* padding-bottom: 1rem; */
+    margin-bottom: 6rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 2.4rem;
+
+}
+
+.new {
+    border: none !important;
+}
+
+
+.btn2 {
+    border: 1px solid #18bc9c;
+    background-color: #18bc9c;
+    padding: 1.6rem 2.5rem;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    transition: all .3s ease-in-out;
+}
+
+.btn2:hover {
+    background-color: #0e826b;
+    color: #fff;
+}
+
+/* footer region */
+
+
+footer {
+    padding: 6rem 0rem;
+    background-color: #2C3E50;
+    text-align: center;
+    color: #fff;
+}
+
+footer h4 {
+    font-size: 2.4rem;
+}
+
+footer p {
+    font-size: 2rem;
+    margin-top: 1rem;
+
+}
+
+.col h4 {
+    padding-bottom: 1rem;
+}
+
+.social-media {
+    width: 5.2rem;
+    height: 5.2rem;
+    border-radius: 50%;
+    font-size: 2.2rem;
+    color: #333;
+    outline: none;
+    border: none;
+    transition: background-color .3s ease-in-out,
+        color .3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px inset rgba(0, 0, 0, 0.8);
+}
+
+
+footer li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+footer li:hover .social-media {
+    background-color: #333;
+    color: #fff;
+}
+
+.copyright {
+    color: #fff;
+    background-color: #1A252F;
+    text-align: center;
+    padding: 2.4rem 0rem;
+}
